@@ -109,8 +109,8 @@ public abstract class Aereos extends Vehiculo {
         return super.toString()+"\nVehiculo Aereo\n" + 
                 "Numero De Motores: " + numeroMotores + 
                 "\nNumero De Asientos: " + numeroAsientos + 
-                "\nElevacion Maxima: " + elevacionMaxima + 
-                "\nCarga Maxima: " + cargaMaxima;
+                "\nElevacion Maxima: " + elevacionMaxima + " m"+
+                "\nCarga Maxima: " + cargaMaxima+ " toneladas";
     }
     
     

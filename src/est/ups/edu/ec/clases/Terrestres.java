@@ -109,7 +109,7 @@ public abstract class Terrestres extends Vehiculo{
                 + "Numero De Neumaticos: " + numeroNeumaticos + 
                 "\nTipo De Transmision: " + tipoTransmision + 
                 "\nTipo De Transporte: " + tipoTransporte + 
-                "\nVelocidad Maxima: " + velocidadMaxima ;
+                "\nVelocidad Maxima: " + velocidadMaxima +" km/h";
     }
     
     
