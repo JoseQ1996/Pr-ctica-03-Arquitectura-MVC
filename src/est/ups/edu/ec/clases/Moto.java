@@ -10,32 +10,34 @@ import est.ups.edu.ec.interfaces.Acciones;
 
 /**
  *
+ *Esta clase instancia los atributos,getters y setters,constructores y metodos de la clase hija Moto
+ *
  * @author José Quinde
  */
 public final class Moto extends Terrestres implements Acciones{
-    /*
-    Declaracion de variables clase Moto 
+    /**
+    *Declaracion de variables clase Moto 
     */
     private boolean limitador;
     private double alturaMaxima;
     private int capacidadSillin;
     private boolean luces;
     
-    /*
-    Constructor vacio clase Moto
+    /**
+    *Constructor vacio clase Moto
     */   
     public Moto() {
         
     }   
-    /*
-    Constructor con atributo codigo de la clase abuelo Vehiculo
+    /**
+    *Constructor con atributo codigo de la clase abuelo Vehiculo
      */
 
     public Moto(int codigo) {
         super(codigo);
     }
-    /*
-    Contructor con todos los atributos de la clase abuelo Vehiculo, de la clase padre Terrestres y la clase hija Moto
+    /**
+    *Contructor con todos los atributos de la clase abuelo Vehiculo, de la clase padre Terrestres y la clase hija Moto
      */
     public Moto(boolean limitador, double alturaMaxima, int capacidadSillin, boolean luces, int numeroNeumaticos, String tipoTransmision, String tipoTransporte, double velocidadMaxima, int codigo, String modelo, String matricula, String marca) {
         super(numeroNeumaticos, tipoTransmision, tipoTransporte, velocidadMaxima, codigo, modelo, matricula, marca);
@@ -45,8 +47,8 @@ public final class Moto extends Terrestres implements Acciones{
         this.luces = luces;
     }
 
-    /*
-    Getters y Setters clase Moto
+    /**
+    *Getters y Setters clase Moto
      */
     public boolean isLimitador() {
         return limitador;
@@ -80,42 +82,42 @@ public final class Moto extends Terrestres implements Acciones{
         this.luces = luces;
     }
     
-    /*
-    metodo que indica si la moto esta en una pista de carrera
+    /**
+    *Metodo que indica si la moto esta en una pista de carrera
     */
     public void enPista(){
         System.out.println("La moto de modelo "+this.getModelo()+"y de altura maxima "+this.getAlturaMaxima()+" esta en pista");
     }
-    /*
-    metodo que indica si la moto esta en carretera normal
+    /**
+    *Metodo que indica si la moto esta en carretera normal
     */
     public void enCarretera(){
         System.out.println("La moto de modelo "+this.getModelo()+"y de altura maxima "+this.getAlturaMaxima()+" esta en carretera noraml");
     }
-    /*
-    Metodo abstracto que devuele el consumo de la Moto sin ningun parametro nos devuelme el consumo promedio de una moto  2,7 litros en 100km 
+    /**
+    *Metodo abstracto que devuele el consumo de la Moto sin ningun parametro nos devuelme el consumo promedio de una moto  2,7 litros en 100km 
     */
     @Override
     public double nivelConsumo() {
         return 2.7;
     }
-     /*
-    Metodo de la clase interface que indica que gira a la derecha
+     /**
+    *Metodo de la clase interface que indica que gira a la derecha
      */
     @Override
     public void girarDerecha() {
         System.out.println("La Moto de modelo "+this.getModelo()+" esta girando a la derecha");
     }
-    /*
-    Metodo de la clase interface que indica que gira a la izquierda
+    /**
+    *Metodo de la clase interface que indica que gira a la izquierda
      */
     @Override
     public void girarIzquierda() {
         System.out.println("La Moto de modelo "+this.getModelo()+" esta girando a la izquierda");
     }
 
-    /*
-    ToString que imprime todos los atributos de la clase abuela Vehiculo, la clase Padre Terrestres y la clase hija Moto
+    /**
+    *ToString que imprime todos los atributos de la clase abuela Vehiculo, la clase Padre Terrestres y la clase hija Moto
      */
     @Override
     public String toString() {

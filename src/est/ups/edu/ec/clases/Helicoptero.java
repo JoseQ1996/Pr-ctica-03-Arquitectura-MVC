@@ -10,32 +10,34 @@ import est.ups.edu.ec.interfaces.Acciones;
 
 /**
  *
+ * Esta clase instancia los atributos,getters y setters,constructores y metodos de la clase hija Helicoptero
+ *
  * @author José Quinde
  */
 public final class Helicoptero extends Aereos implements Acciones {
-    /*
-    Declaracion variables clase Helicoptero
+    /**
+    *Declaracion variables clase Helicoptero
     */
     private double velocidadHelice;
     private int numeroRotores;
     private int numeroHelices;
     private double anchoCabina;
     
-    /*
-    Constructor vacio clase Helicoptero
+    /**
+    *Constructor vacio clase Helicoptero
     */
     public Helicoptero() {
     }
 
-    /*
-    Constructor con atributo codigo de la clase abuelo Vehiculo
+    /**
+    *Constructor con atributo codigo de la clase abuelo Vehiculo
      */
     public Helicoptero(int codigo) {
         super(codigo);
     }
 
-    /*
-    Constructor con los atributos de la clase abuelo Vehiculo, de la clase padre Aereos y de la clase hija Helicoptero
+    /**
+    *Constructor con los atributos de la clase abuelo Vehiculo, de la clase padre Aereos y de la clase hija Helicoptero
      */
     public Helicoptero(double velocidadHelice, int numeroRotores, int numeroHelices, double anchoCabina, int numeroMotores, int numeroAsientos, double elevacionMaxima, double cargaMaxima, int codigo, String modelo, String matricula, String marca) {
         super(numeroMotores, numeroAsientos, elevacionMaxima, cargaMaxima, codigo, modelo, matricula, marca);
@@ -45,8 +47,8 @@ public final class Helicoptero extends Aereos implements Acciones {
         this.anchoCabina = anchoCabina;
     }
 
-    /*
-    Getters y Setters clase Helicoptero
+    /**
+    *Getters y Setters clase Helicoptero
      */
     public double getVelocidadHelice() {
         return velocidadHelice;
@@ -79,42 +81,42 @@ public final class Helicoptero extends Aereos implements Acciones {
     public void setAnchoCabina(double anchoCabina) {
         this.anchoCabina = anchoCabina;
     }
-    /*
-    Metodo que indica si e helicoptero esta en movimiento
+    /**
+    *Metodo que indica si e helicoptero esta en movimiento
     */
     public void enMovimiento(){
         System.out.println("El Helicoptero de modelo "+this.getModelo()+" con el numero de rotores de "+this.getNumeroRotores()+" esta en movimiento");
     }
-    /*
-    Metodo que indica si e helicoptero esta en reposo
+    /**
+    *Metodo que indica si e helicoptero esta en reposo
     */
      public void enReposo(){
         System.out.println("El Helicoptero de modelo "+this.getModelo()+" con el numero de rotores de "+this.getNumeroRotores()+" esta en reposo");
     }
-    /*
-    Metodo abstracto que indica el promedio de tiempo de vuelo de un helicoptero devuelve un valor 14,16 es el valor que devuelde ya que es un double
+    /**
+    *Metodo abstracto que indica el promedio de tiempo de vuelo de un helicoptero devuelve un valor 14,16 es el valor que devuelde ya que es un double
      */
     @Override
     public double tiempoDeVuelo() {
         return 14.16;
     }
-    /*
-    Metodo de la clase interface que indica si gira a la derecha
+    /**
+    *Metodo de la clase interface que indica si gira a la derecha
     */
      @Override
     public void girarDerecha() {
         System.out.println("El Helicoptero de modelo "+this.getModelo()+" esta girando a la derecha");
     }
-    /*
-    Metodo de la clase interface que indica que gira a la izquierda
+    /**
+    *Metodo de la clase interface que indica que gira a la izquierda
      */
     @Override
     public void girarIzquierda() {
         System.out.println("El Helicoptero de modelo "+this.getModelo()+" esta girando a la izquierda");
     }
 
-    /*
-    ToString que imprime los atributos de la clase abuelo Vehiculo,de la calase padre Aereos y de la clase hija Helicoptero
+    /**
+    *ToString que imprime los atributos de la clase abuelo Vehiculo,de la calase padre Aereos y de la clase hija Helicoptero
      */
     @Override
     public String toString() {

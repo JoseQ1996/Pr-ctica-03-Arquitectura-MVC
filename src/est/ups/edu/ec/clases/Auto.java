@@ -10,31 +10,33 @@ import est.ups.edu.ec.interfaces.Acciones;
 
 /**
  *
+ *Esta clase instancia los atributos,getters y setters,constructores y metodos de la clase hija Auto
+ *
  * @author José Quinde
  */
 public final class Auto extends Terrestres implements Acciones{
-    /*
-    Declaracion variables clase Auto
+    /**
+    *Declaracion variables clase Auto
     */
     private String tipoTranccion;
     private int numeroPuertas;
     private int cilindraje;
     private boolean descapotable;
     
-    /*
-    Constructor vacio clase Terrestres
+    /**
+    *Constructor vacio clase Terrestres
     */  
     public Auto() {
     }
-    /*
-    Constructor con atributo codigo de la clase abuelo Vehiculo
+    /**
+    *Constructor con atributo codigo de la clase abuelo Vehiculo
      */
     public Auto(int codigo) {
         super(codigo);
     }
     
-    /*
-    Constructor con todos los atributos clase abuelo Vehiculo, clase padre Terrestres y clase hija Auto
+    /**
+    *Constructor con todos los atributos clase abuelo Vehiculo, clase padre Terrestres y clase hija Auto
      */
     public Auto(String tipoTranccion, int numeroPuertas, int cilindraje, boolean descapotable, int numeroNeumaticos, String tipoTransmision, String tipoTransporte, double velocidadMaxima, int codigo, String modelo, String matricula, String marca) {
         super(numeroNeumaticos, tipoTransmision, tipoTransporte, velocidadMaxima, codigo, modelo, matricula, marca);
@@ -45,8 +47,8 @@ public final class Auto extends Terrestres implements Acciones{
     }
     
 
-    /*
-    Getters y Setters clase Auto
+    /**
+    *Getters y Setters clase Auto
      */
     public String getTipoTranccion() {
         return tipoTranccion;
@@ -80,19 +82,19 @@ public final class Auto extends Terrestres implements Acciones{
         this.descapotable = descapotable;
     }
     
-    /*
-    Metodo que indica si el auto esta reproducciendo musica
+    /**
+    *Metodo que indica si el auto esta reproducciendo musica
     */
     public void reproduceMusica(){
         System.out.println("El Auto de modelo "+this.getModelo()+" y con traccion "+this.getTipoTranccion()+" esta reproducciendo musica");  
     }
-    /*
-    Metodo que indica si el auto esta en Reversa
+    /**
+    *Metodo que indica si el auto esta en Reversa
     */
     public void deReversa(){
         System.out.println("El Auto de modelo "+this.getModelo()+" y con traccion "+this.getTipoTranccion()+" esta de reversa");  
     }
-    /*
+    /**
     *Metodo abstracto que calculo el nivel de consume de acuero al cilindraje si es Auto de 4 cilindros 1.6 litro en carretera,
     *Auto de 6 cilindros 2,4 litro en carretera ,Auto de 3.2 litro en carretera 
     */
@@ -108,22 +110,22 @@ public final class Auto extends Terrestres implements Acciones{
         return 4.5;
     }
 
-    /*
-    Metodo de la clase interface que indica que gira a la derecha
+    /**
+    *Metodo de la clase interface que indica que gira a la derecha
      */
     @Override
     public void girarDerecha() {
         System.out.println("El auto con modelo "+this.getModelo()+" esta girando a la derecha");
     }
-    /*
-    Metodo de la clase interface que indica que gira a la izquierda
+    /**
+    *Metodo de la clase interface que indica que gira a la izquierda
      */
     @Override
     public void girarIzquierda() {
         System.out.println("El auto con modelo "+this.getModelo()+" esta girando a la izquierda");
     }
-    /*
-    toString imprime todos los atributos clase abuelo Vehiculo clase padre Terrestres y clase hija Auto
+    /**
+    *toString imprime todos los atributos clase abuelo Vehiculo clase padre Terrestres y clase hija Auto
      */
     @Override
     public String toString() {

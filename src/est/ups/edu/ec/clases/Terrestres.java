@@ -8,30 +8,32 @@ package est.ups.edu.ec.clases;
 
 /**
  *
+ *Esta clase instancia los atributos,getters y setters,constructores y metodos de la clase padre Terrestres
+ *
  * @author José Quinde
  */
 public abstract class Terrestres extends Vehiculo{
     
-    /*
-    Declaracion variables clase Terrestres tambien hereda los datos de la clase Vehiculo
+    /**
+    *Declaracion variables clase Terrestres tambien hereda los datos de la clase Vehiculo
     */
     private int numeroNeumaticos;
     private String tipoTransmision;
     private String tipoTransporte;
     private double velocidadMaxima;
-    /*
-    Constructor vacio clase Terrestres
+    /**
+    *Constructor vacio clase Terrestres
     */
     public Terrestres() {
     }
-    /*
-    Constructor atributo codigo de clase padre Vehiculo
+    /**
+    *Constructor atributo codigo de clase padre Vehiculo
     */
     public Terrestres(int codigo) {
         super(codigo);
     }
-    /*
-    Constructor pide todos los atributos de la clase padre Vehiculo y tambien los atributos de Terrestres
+    /**
+    *Constructor pide todos los atributos de la clase padre Vehiculo y tambien los atributos de Terrestres
     */
     public Terrestres(int numeroNeumaticos, String tipoTransmision, String tipoTransporte, double velocidadMaxima, int codigo, String modelo, String matricula, String marca) {
         super(codigo, modelo, matricula, marca);
@@ -41,8 +43,8 @@ public abstract class Terrestres extends Vehiculo{
         this.velocidadMaxima = velocidadMaxima;
     }
     
-    /*
-    Getters y Setters de la clase Terrestres
+    /**
+    *Getters y Setters de la clase Terrestres
      */
     public int getNumeroNeumaticos() {
         return numeroNeumaticos;
@@ -76,32 +78,32 @@ public abstract class Terrestres extends Vehiculo{
         this.velocidadMaxima = velocidadMaxima;
     }
     
-    /*
-    este metodo nos dice si el vehiculo terrestre va arrancar
+    /**
+    *este metodo nos dice si el vehiculo terrestre va arrancar
     */
     public void arrancar(){
         System.out.println("El vehiculo de modelo "+this.getModelo()+" y tipo de transmision "+this.getTipoTransmision()+" va ha arrancar"); 
     }
-    /*
-    este metodo nos dice si el vehiculo terrestre va frenar
+    /**
+    *este metodo nos dice si el vehiculo terrestre va frenar
     */
     public void frenar(){
         System.out.println("El vehiculo de modelo "+this.getModelo()+" y tipo de transmision "+this.getTipoTransmision()+" va frenar"); 
 
     }
-    /*
-    este metodo nos dice si el vehiculo terrestre va ha disminuir la velocidad
+    /**
+    *este metodo nos dice si el vehiculo terrestre va ha disminuir la velocidad
     */
     public void desminuirVelocidad(){
          System.out.println("El vehiculo de modelo "+this.getModelo()+" y tipo de transmision "+this.getTipoTransmision()+" esta disminuyendo la velocidad"); 
 
     }
-    /*
-    declaracion metodo abstract a implementar en clases hijas devuelve un double
+    /**
+    *declaracion metodo abstract a implementar en clases hijas devuelve un double
     */
     public abstract double nivelConsumo();
-    /*
-    to String imprime los datos clase padre Vehiculo y clase hija Terrestres
+    /**
+    *to String imprime los datos clase padre Vehiculo y clase hija Terrestres
     */
     @Override
     public String toString() {
