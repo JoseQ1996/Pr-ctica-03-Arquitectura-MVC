@@ -23,13 +23,12 @@ public final class Auto extends Terrestres implements Acciones{
     
     /*
     Constructor vacio clase Terrestres
-    */
-    
+    */  
     public Auto() {
     }
     /*
-    Constructor atributo codigo clase abuelo Vehiculo
-    */
+    Constructor con atributo codigo de la clase abuelo Vehiculo
+     */
     public Auto(int codigo) {
         super(codigo);
     }

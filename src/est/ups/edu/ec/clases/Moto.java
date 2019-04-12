@@ -23,19 +23,17 @@ public final class Moto extends Terrestres implements Acciones{
     
     /*
     Constructor vacio clase Moto
-    */
-    
+    */   
     public Moto() {
-    }
-    
+        
+    }   
     /*
-    Constructor atributo codigo clase abuelo Vehiculo
-    */
-    
+    Constructor con atributo codigo de la clase abuelo Vehiculo
+     */
+
     public Moto(int codigo) {
         super(codigo);
     }
-
     /*
     Contructor con todos los atributos de la clase abuelo Vehiculo, de la clase padre Terrestres y la clase hija Moto
      */
@@ -106,14 +104,14 @@ public final class Moto extends Terrestres implements Acciones{
      */
     @Override
     public void girarDerecha() {
-        System.out.println("La Moto con modelo "+this.getModelo()+" esta girando a la derecha");
+        System.out.println("La Moto de modelo "+this.getModelo()+" esta girando a la derecha");
     }
     /*
     Metodo de la clase interface que indica que gira a la izquierda
      */
     @Override
     public void girarIzquierda() {
-        System.out.println("La Moto con modelo "+this.getModelo()+" esta girando a la izquierda");
+        System.out.println("La Moto de modelo "+this.getModelo()+" esta girando a la izquierda");
     }
 
     /*
