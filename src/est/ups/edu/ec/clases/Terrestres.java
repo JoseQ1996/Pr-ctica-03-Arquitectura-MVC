@@ -105,7 +105,7 @@ public abstract class Terrestres extends Vehiculo{
     */
     @Override
     public String toString() {
-        return super.toString()+"\n Vehiculo Terrestre\n" 
+        return super.toString()+"\nVehiculo Terrestre\n" 
                 + "Numero De Neumaticos: " + numeroNeumaticos + 
                 "\nTipo De Transmision: " + tipoTransmision + 
                 "\nTipo De Transporte: " + tipoTransporte + 

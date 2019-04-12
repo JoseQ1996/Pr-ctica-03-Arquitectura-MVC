@@ -77,7 +77,7 @@ public class Vehiculo {
     /*
     metodo que imprime un mensaje que el vehiculo esta prendido
     */
-    public void prende(){
+    public void encender(){
         System.out.println("El vehiculo de modelo "+this.getModelo()+" y marca "+ this.getMarca()+" esta encendido");
     }
     /*

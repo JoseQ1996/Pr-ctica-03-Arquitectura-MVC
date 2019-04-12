@@ -120,7 +120,7 @@ public final class Moto extends Terrestres implements Acciones{
     @Override
     public String toString() {
         return super.toString()+"\nMoto\n" + 
-                "\nLimitador: " + limitador + 
+                "Limitador: " + limitador + 
                 "\nAltura Maxima: " + alturaMaxima + " m"+ 
                  "\nCapacidad del Sillin:" +capacidadSillin+" personas"+
                 "\nLuces:" + luces;

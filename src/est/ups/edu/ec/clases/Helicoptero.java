@@ -118,8 +118,8 @@ public final class Helicoptero extends Aereos implements Acciones {
      */
     @Override
     public String toString() {
-        return super.toString()+"\nHelicoptero{\n" + 
-                "\nVelocidad De La Helice: " + velocidadHelice +" km/h"+
+        return super.toString()+"\nHelicoptero\n" + 
+                "Velocidad De La Helice: " + velocidadHelice +" km/h"+
                 "\nNumero De Rotores: " + numeroRotores + 
                 "\nNumero De Helices: " + numeroHelices + 
                 "\nAncho De Cabina: " + anchoCabina + " m";

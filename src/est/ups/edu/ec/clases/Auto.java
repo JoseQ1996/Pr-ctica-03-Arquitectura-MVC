@@ -35,13 +35,15 @@ public final class Auto extends Terrestres implements Acciones{
     
     /*
     Constructor con todos los atributos clase abuelo Vehiculo, clase padre Terrestres y clase hija Auto
-    */
-    public Auto(String tipoTranccion, int numeroPuertas, boolean descapotable, int numeroNeumaticos, String tipoTransmision, String tipoTransporte, double velocidadMaxima, int codigo, String modelo, String matricula, String marca) {
+     */
+    public Auto(String tipoTranccion, int numeroPuertas, int cilindraje, boolean descapotable, int numeroNeumaticos, String tipoTransmision, String tipoTransporte, double velocidadMaxima, int codigo, String modelo, String matricula, String marca) {
         super(numeroNeumaticos, tipoTransmision, tipoTransporte, velocidadMaxima, codigo, modelo, matricula, marca);
         this.tipoTranccion = tipoTranccion;
         this.numeroPuertas = numeroPuertas;
+        this.cilindraje = cilindraje;
         this.descapotable = descapotable;
     }
+    
 
     /*
     Getters y Setters clase Auto
@@ -128,7 +130,7 @@ public final class Auto extends Terrestres implements Acciones{
         return super.toString()+"\nAuto\n" + 
                 "Tipo De Tranccion:" + tipoTranccion + 
                 "\nNumero De Puertas: " + numeroPuertas + 
-                "Cilindraje: " + cilindraje + 
+                "\nCilindraje: " + cilindraje + 
                 "\nDescapotable: " + descapotable;
     }
     

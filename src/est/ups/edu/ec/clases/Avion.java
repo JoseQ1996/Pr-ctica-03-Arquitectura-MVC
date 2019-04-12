@@ -126,7 +126,8 @@ public final class Avion extends Aereos implements Acciones {
     public String toString() {
         return super.toString()+"\nAvion\n" 
                 + "Aerolinea: " + aerolinea + 
-                "\nNumero De Filas: " + numeroFilas + "\n Tiempo De Despegue:" + tiempoDespegue + " s" +
+                "\nNumero De Filas: " + numeroFilas + 
+                "\nTiempo De Despegue:" + tiempoDespegue + " s" +
                 "\nEspacio De Aterrizaje: " + espacioAterrizaje + " m";
     }
     
