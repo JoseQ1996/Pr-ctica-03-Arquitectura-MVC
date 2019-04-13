@@ -53,7 +53,7 @@ public class prueba {
         lista.add(avion2);
         lista.add(heli1);
         lista.add(heli2);
-        
+       
         /*
         Se recorre la lista tambien se hace el casting y el instance Of para saber a que clase hija pertenece y se imprime
         */
@@ -132,6 +132,11 @@ public class prueba {
         heli2.girarDerecha();
         System.out.println("El Helicoptero tiene un tiempo de vuelo de "+heli2.tiempoDeVuelo()+" horas");
         System.out.println("-----------------------------------------------------------------------------------------------------------------");
+         /*
+        Se crea un vehiculo anonimo y se lo imprime
+        */
+        Vehiculo anonimo=new Vehiculo(9, "Corvette", "DFF-96", "Chevroleth");
+        System.out.println(anonimo);
     }
     
 }

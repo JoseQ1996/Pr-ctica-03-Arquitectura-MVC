@@ -12,10 +12,9 @@ package est.ups.edu.ec.clases;
  *
  * @author José Quinde
  */
-public abstract class Terrestres extends Vehiculo{
-    
+public abstract class Terrestres extends Vehiculo{  
     /**
-    *Declaracion variables clase Terrestres tambien hereda los datos de la clase Vehiculo
+    *Declaracion variables clase Terrestres
     */
     private int numeroNeumaticos;
     private String tipoTransmision;
