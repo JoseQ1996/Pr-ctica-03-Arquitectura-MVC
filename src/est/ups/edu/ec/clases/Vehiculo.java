@@ -12,7 +12,7 @@ package est.ups.edu.ec.clases;
  *
  * @author José Quinde
  */
-public class Vehiculo {
+public class Vehiculo implements Comparable <Vehiculo>{
     /**
     *Variables a declarar clase Vehiculo
     */
@@ -105,6 +105,16 @@ public class Vehiculo {
                 "\nMatricula: " + matricula + 
                 "\nMarca: " + marca;
     }
-    
-    
+
+    @Override
+    public int compareTo(Vehiculo v) {
+        if(modelo.compareTo(v.getModelo())>=1){
+            return 1;
+        }else if(modelo.compareTo(v.getModelo())<=-1){
+            return -1;
+        }else 
+            return 0;
+    }
+
+
 }

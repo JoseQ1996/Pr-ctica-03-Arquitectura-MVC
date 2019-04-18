@@ -13,6 +13,8 @@ import est.ups.edu.ec.clases.Moto;
 import est.ups.edu.ec.clases.Vehiculo;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 /**
  *
@@ -137,6 +139,21 @@ public class prueba {
         */
         Vehiculo anonimo=new Vehiculo(9, "Corvette", "DFF-96", "Chevroleth");
         System.out.println(anonimo);
+        
+       int comp= "Pepito".compareTo("Pepito");
+        System.out.println(comp);
+        
+        SortedSet<Auto>listaOrdenada=new TreeSet<>();
+        listaOrdenada.add(auto1);
+        listaOrdenada.add(auto2);
+        
+        System.out.println("Lista Ordenada");
+        for(Auto auto: listaOrdenada){
+            System.out.println(auto.getModelo());
+        }
+                
+                
+                
     }
     
 }
