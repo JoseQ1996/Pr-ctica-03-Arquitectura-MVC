@@ -177,7 +177,7 @@ public class Principal {
                             case 1:
                                 //create                                
                                 //pide todos los datos por teclado
-                                int codigo=controladorMoto.buscarUltimoCodigo();
+
                                 System.out.println("Ingrese el modelo del Vehiculo: ");
                                 String modelo=entrada.next();
                                 System.out.println("Ingrese la matricula del Vehiculo:");
@@ -201,11 +201,10 @@ public class Principal {
                                 System.out.println("true o false si la moto tiene luces:");
                                 boolean luces=entrada.nextBoolean();
                                  //instancia un objeto
-                                Moto moto=new Moto(limitador,altura,sillin, luces, llantas, transmision, tipo, velocidad, codigo, modelo,matricula, marca);
+                                Moto moto=new Moto(limitador,altura,sillin, luces, llantas, transmision, tipo, velocidad, 0, modelo,matricula, marca);
                                
                                 //llama al metodo create del controlador
                                 controladorMoto.create(moto);
-                                System.out.println("Se ha creado un Vehiculo con codigo "+codigo);
                                 break;
                             case 2:
                                 //read
