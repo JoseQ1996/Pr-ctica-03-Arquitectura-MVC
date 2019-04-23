@@ -5,6 +5,8 @@ Tercera Practica de la Materia de Programación Aplicada
 
 **CARRERA:** Computacion
 
+**MATERIA:** Programacion Aplicada
+
 ## OBJETIVO ALCANZADO:
 
 El objetivo que se alcanzo fue implementar las diferentes interfaces aprendidas en los controladores de nuestras clases hijas para un manejo más óptimo de los objetos.
