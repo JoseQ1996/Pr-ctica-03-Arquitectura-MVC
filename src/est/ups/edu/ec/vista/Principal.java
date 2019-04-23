@@ -63,7 +63,8 @@ public class Principal {
                         System.out.println("2. Read");
                         System.out.println("3. Update");
                         System.out.println("4. Delete");
-                        System.out.println("5. Regresar al menu principal");
+                        System.out.println("5. Listar");
+                        System.out.println("6. Regresar al menu principal");
                         System.out.println("Selecciona una opción");
                         opcionMenuAuto = entrada.nextInt();
                         
@@ -116,6 +117,7 @@ public class Principal {
                                 //pide todos los datos por teclado
                                 System.out.println("Ingrese el codigo del Vehiculo a Actualizar:");
                                 int codigo2=entrada.nextInt();
+                                if (controladorAuto.read(codigo2) != null) {
                                 System.out.println("Ingrese el modelo del Vehiculo: ");
                                 String modelo1=entrada.next();
                                 System.out.println("Ingrese la matricula del Vehiculo:");
@@ -143,6 +145,9 @@ public class Principal {
                                 //llama al metodo update del controlador
                                 controladorAuto.update(auto1);
                                 System.out.println("El vehiculo con codigo "+codigo2+ " a sido actualizado");
+                                }else{
+                                    System.out.println("El vehiculo no existe");
+                                } 
                                 break;
                             case 4:
                                 //delete
@@ -154,12 +159,16 @@ public class Principal {
                                 System.out.println("El vehiculo con codigo "+codigo3+ " a sido eliminado");
                                 break;
                             case 5:
+                                //Listar los objetos ingresados
+                                controladorAuto.printAll();
+                                break;    
+                            case 6:
                                 //regresar
                                 System.out.println("Regresando al menú principal");
                                 break;
                         }
                         
-                    }while(opcionMenuAuto !=5);
+                    }while(opcionMenuAuto !=6);
                     break;
                 case 2:
                     //opcion para el crud de la moto
@@ -169,7 +178,8 @@ public class Principal {
                         System.out.println("2. Read");
                         System.out.println("3. Update");
                         System.out.println("4. Delete");
-                        System.out.println("5. Regresar al menu principal");
+                        System.out.println("5. Listar");
+                        System.out.println("6. Regresar al menu principal");
                         System.out.println("Selecciona una opción");
                         opcionMenuMoto = entrada.nextInt();
                         
@@ -221,6 +231,7 @@ public class Principal {
                                 //pide todos los datos por teclado
                                 System.out.println("Ingrese el codigo del Vehiculo a Actualizar:");
                                 int codigo2=entrada.nextInt();
+                                if (controladorMoto.read(codigo2) != null) {
                                 System.out.println("Ingrese el modelo del Vehiculo: ");
                                 String modelo1=entrada.next();
                                 System.out.println("Ingrese la matricula del Vehiculo:");
@@ -248,6 +259,9 @@ public class Principal {
                                 //llama al metodo update del controlador
                                 controladorMoto.update(moto1);
                                 System.out.println("El vehiculo con codigo "+codigo2+ " a sido actualizado");
+                                }else{
+                                    System.out.println("El Vehiculo no existe");
+                                }
                                 break;
                             case 4:
                                 //delete
@@ -259,11 +273,14 @@ public class Principal {
                                 System.out.println("El vehiculo con codigo "+codigo3+ " a sido eliminado");
                                 break;
                             case 5:
+                                break;
+                                //Listar los objetos ingresados
+                            case 6:    
                                 //regresar
                                 System.out.println("Regresando al menú principal");
                                 break;
                         }
-                    }while(opcionMenuMoto !=5);
+                    }while(opcionMenuMoto !=6);
                     break;
                 case 3:
                     //opcion para el crud de Avion
@@ -273,7 +290,8 @@ public class Principal {
                         System.out.println("2. Read");
                         System.out.println("3. Update");
                         System.out.println("4. Delete");
-                        System.out.println("5. Regresar al menu principal");
+                        System.out.println("5. Listar");
+                        System.out.println("6. Regresar al menu principal");
                         System.out.println("Selecciona una opción");
                         opcionMenuAvion = entrada.nextInt();
                         
@@ -326,6 +344,7 @@ public class Principal {
                                 //pide todos los datos por teclado
                                 System.out.println("Ingrese el codigo del Vehiculo a Actualizar:");
                                 int codigo2=entrada.nextInt();
+                                if (controladorAvion.read(codigo2) != null) {
                                 System.out.println("Ingrese el modelo del Vehiculo: ");
                                 String modelo1=entrada.next();
                                 System.out.println("Ingrese la matricula del Vehiculo:");
@@ -354,6 +373,10 @@ public class Principal {
                                 //llama al metodo update del controlador
                                 controladorAvion.update(avion1);
                                 System.out.println("El vehiculo con codigo "+codigo2+ " a sido actualizado");
+                                }else{
+                                    System.out.println("El vehiculo no existe");
+                                }
+                                    
                                 break;
                             case 4:
                                 //delete
@@ -365,12 +388,16 @@ public class Principal {
                                 System.out.println("El vehiculo con codigo "+codigo3+ " a sido eliminado");
                                 break;
                             case 5:
+                                //Listar los objetos ingresados
+                                controladorAvion.printAll();
+                                break;
+                            case 6:
                                 //regresar
                                 System.out.println("Regresando al menú principal");
                                 break;
                         }
                         
-                    }while(opcionMenuAvion !=5);
+                    }while(opcionMenuAvion !=6);
                     break;
                 case 4:
                     //opcion para el crud del Helicoptero
@@ -380,7 +407,8 @@ public class Principal {
                         System.out.println("2. Read");
                         System.out.println("3. Update");
                         System.out.println("4. Delete");
-                        System.out.println("5. Regresar al menu principal");
+                        System.out.println("5. Listar");
+                        System.out.println("6. Regresar al menu principal");
                         System.out.println("Selecciona una opción");
                         opcionMenuHelicoptero = entrada.nextInt();
                         
@@ -433,6 +461,7 @@ public class Principal {
                                 //pide todos los datos por teclado
                                 System.out.println("Ingrese el codigo del Vehiculo a Actualizar:");
                                 int codigo2=entrada.nextInt();
+                                if (controladorHelicoptero.read(codigo2) != null) {
                                 System.out.println("Ingrese el modelo del Vehiculo: ");
                                 String modelo1=entrada.next();
                                 System.out.println("Ingrese la matricula del Vehiculo:");
@@ -461,6 +490,9 @@ public class Principal {
                                 //llama al metodo update del controlador
                                 controladorHelicoptero.update(helicop1);
                                 System.out.println("El vehiculo con codigo "+codigo2+ " a sido actualizado");
+                                }else{
+                                    System.out.println("El Vehiculo no Existe");
+                                }
                                 break;
                             case 4:
                                 //delete
@@ -472,12 +504,16 @@ public class Principal {
                                 System.out.println("El vehiculo con codigo "+codigo3+ " a sido eliminado");
                                 break;
                             case 5:
+                                //Listar los objetos ingresados
+                                
+                                break;           
+                            case 6:
                                 //regresar
                                 System.out.println("Regresando al menú principal");
                                 break;
                         }
                         
-                    }while(opcionMenuHelicoptero !=5);
+                    }while(opcionMenuHelicoptero !=6);
                     break;
                 case 5:
                     //opcion para salir
