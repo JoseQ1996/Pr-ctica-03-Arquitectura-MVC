@@ -522,8 +522,9 @@ Como ejemplo mostrare el crud de Auto y el menú.
                     }while(opcionMenuAuto !=6);
                     break;
 </code></pre>
- 
+ **11. Desarrollar el diagrama de clases correspondiente usando la herramienta LucidChart. Se debe agregar las clases controladores y la clase “Principal”.**
 
+![alt tag](https://pdf-service-lucidchart-com.s3.amazonaws.com/603dc1a9-a5de-4ace-8855-ca1a608d1237?X-Amz-Security-Token=AgoJb3JpZ2luX2VjEOv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIAY%2BVaWJIwIL0yI9E8gKb6scMN4zFOKzgFgJjcjZcbcCAiEA7bsx4lnHpFpqDO4Ax96WyVvVFRr8kBqf5dLK12tDI3Aq4wMIw%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw5MzU2MDY5MjYxODIiDHmu%2BaoNd3jraKDEqSq3A7S8%2FiPgkwaWhbgixATggKde0EGci8xpsBFMLXe06PUOgGr3j%2FwDsJCv5VxsXKPJjuY51mfomOaXe4vHTdQaWTTNohU8WgpOQWRf3Vy%2BCqmpy2jqBx6EeX2y%2FZguw0z0%2B10%2FDIJLnec6vxOuicQWTuIWXDzFNjXp8VcMjfaICPCtEYu4p7lgcRSreqVMVOpc%2BXAD%2Fao9ggAptiJ57oqV%2BWjYGLbuGfwLdl5CldwyO1MCL86Y7S7grYLC%2Bp17j02HZO%2Frrfs56fTzePrEH7O4iuEMioy%2Fzri4KMmHAvLHXZ7BBaPLAimojSG8pmx7MVdx9lrCgl9sFiThQhaHaFfHkre87q3i9BON7nURL%2BL8ghMYWW1ITq%2BoTsQYTXiwQwF6AtVl2xqCTSX9kvNRcfpslG4vfKhFD%2BrPL0kM7AEVgDX4GbDV3deYWirPmmw211%2BBkyzXQiAfaf3vNqmv4RjKJ1l6qE7QvgInkwILbEgeKOty5pe23EdQh0NWQg0B8ZjF71jKLubOEd6AvZQ9LLdPMJubqQSBnpyaeNqElMOAYx63T34Az7aOFspV8z2NhwFgdT4IP11xbbwwk6z95QU6tAElXdUibJs52Glx9Uwv49H9wfkWHoRVdwPCLPPjRj6yup%2Br9CumXjmJwUw6BiPxfZU5VuMGIyXHNm%2BYCZRsp7qKMPW2%2FjZ9MXrMeBHmF9K0Kbt%2Fze5d4fCyKNtmbVf1Iwh4HPYNtnzG1bkr6uo2vBjgS27BCYHj6H9Ke%2BQvBIcEqo%2FuqK3ODK%2BHHa5jo5HRc56AXs9PWtisff2%2FoSYfOCNosmz0MwoRvRBObTneeK7wZX2anUk%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190423T185648Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=ASIA5TVUEXNTPZNJXLDP%2F20190423%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=cd3cb24578a45dfd201637dec65e2af096d980c77700649dda812b2c290afb57)
 ## RESULTADO(S) OBTENIDO(S):
 
 •	Se mostrará a continuación el Menú principal y el ingreso al Crud del Auto
