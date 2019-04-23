@@ -13,46 +13,71 @@ import java.util.Map;
 
 
 /**
- *
+ *El controlador de la clase hija Mot que implementa el Map y el HashMap en el Crud
+ * 
  * @author Jose Quinde
  */
 public class ControladorMoto {
-       private int codigo=0;
+   //Declaracion de variables
+   private int codigo;
    private Map<Integer,Moto> lista;
 
-   
+    /**
+     * Constructor de la clase ControladorMoto que declara el Map como HashMap y inicializa el codigo en 0
+     * 
+     */
     public ControladorMoto() {
         lista = new HashMap<Integer,Moto>();
+        codigo=0;
     }
-   
- public void create(Moto objeto){
+    /**
+     * Este metodo crea un objeto de la clase hija Moto y lo añade al Map
+     * 
+     * @param moto
+     */
+     public void create(Moto moto){
         codigo++;
-        objeto.setCodigo(codigo);
-        lista.put(codigo,objeto);
+        moto.setCodigo(codigo);
+        lista.put(codigo,moto);
+        System.out.println("Se a creado un Vehiculo con el codigo "+codigo);
     }
-    
-    public Moto read(int codigo){
-        
+    /**
+     * Este metodo nos lee un objeto con el codigo dado
+     * 
+     * @param codigo
+     * @return 
+     */
+    public Moto read(int codigo){       
         return (Moto)lista.get(codigo);
     }
-    
-    public void update(Moto objeto){
-
+    /**
+     * Este metodo nos actualiza a un objeto con el codigo dado
+     * 
+     * @param moto
+     */
+    public void update(Moto moto){
             if(lista.containsKey(codigo)){
-                lista.replace(codigo, objeto);
+                lista.replace(codigo, moto);
             }            
-        
     }
-    
+    /**
+     * Este metodo nos elimina un objeto con el codigo dado
+     * 
+     * @param codigo 
+     */
     public void delete(int codigo){
        lista.remove(codigo);
     }
-    
+    /**
+     * Este metodo nos lista todos los objetos del Map
+     * 
+     */
     public void printAll(){
         Iterator it=lista.keySet().iterator();
         while(it.hasNext()){
             Integer key=(Integer) it.next();
-            System.out.println("Codigo "+key+" Objeto "+lista.get(key));
+            System.out.println("---------------------");
+            System.out.println(lista.get(key));
         }
     }
 }

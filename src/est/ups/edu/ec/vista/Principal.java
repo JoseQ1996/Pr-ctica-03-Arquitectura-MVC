@@ -273,8 +273,10 @@ public class Principal {
                                 System.out.println("El vehiculo con codigo "+codigo3+ " a sido eliminado");
                                 break;
                             case 5:
-                                break;
                                 //Listar los objetos ingresados
+                                controladorMoto.printAll();
+                                break;
+                                
                             case 6:    
                                 //regresar
                                 System.out.println("Regresando al menú principal");
@@ -505,7 +507,7 @@ public class Principal {
                                 break;
                             case 5:
                                 //Listar los objetos ingresados
-                                
+                                controladorHelicoptero.printAll();
                                 break;           
                             case 6:
                                 //regresar

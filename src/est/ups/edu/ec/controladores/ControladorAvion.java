@@ -23,7 +23,7 @@ public class ControladorAvion {
     int codigo;
     
     /**
-     * Constructor de la clase ControladorAvion que declara la lista como HashSet y inicializa el codigo en 0
+     * Constructor de la clase ControladorAvion que declara el Set como HashSet y inicializa el codigo en 0
      * 
      */
     public ControladorAvion() {
